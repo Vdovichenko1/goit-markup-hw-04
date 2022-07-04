@@ -93,6 +93,23 @@ span {
     color: var(--nav-log-text-color);
 }
 
+.icon-email {
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+    fill: #757575;
+}
+
+.icon-email:hover {
+    fill: #2196F3;
+}
+
+.icon-phone {
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
+}
+
 /* Main nav */
 
 .main-nav {
@@ -171,6 +188,21 @@ header {
     padding-top: 200px;
     padding-bottom: 200px;
     background: var(--foot-title-bg-color);
+
+    height: 600px;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/fon-hed.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .title-hero {
@@ -247,11 +279,40 @@ header {
     margin-right: 0;
 }
 
+/* Icons quality */
+
+.work-quality .item::before {
+    display: block;
+    content: '';
+    height: 120px;
+    background-color: var(--but--team-color);
+    background-size: 70px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.item.icon-satel::before {
+    background-image: url(../images/antenna.svg);
+}
+
+.item.icon-clock::before {
+    background-image: url(../images/clock.svg);
+}
+
+.item.icon-lap::before {
+    background-image: url(../images/diagram.svg);
+}
+
+.item.icon-cos::before {
+    background-image: url(../images/astronaut.svg);
+}
+
 .head-quality {
     text-transform: uppercase;
     font-size: 14px;
     line-height: 1.14;
 
+    margin-top: 30px;
     margin-bottom: 10px;
 }
 
@@ -267,6 +328,10 @@ header {
 
     margin-right: 30px;
     margin-bottom: 30px;
+}
+
+.flex-element:hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .no-gap {
