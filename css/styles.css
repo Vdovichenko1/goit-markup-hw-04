@@ -38,6 +38,8 @@ html {
     --but--team-color: #F5F4FA;
     --foot-title-bg-color: #2F303A;
     --logo-color: #000000;
+    --network-icon-color: #AFB1B8;
+    --foot-icon-color: rgba(255, 255, 255, 0.1);
 }
 
 body {
@@ -93,23 +95,6 @@ span {
     color: var(--nav-log-text-color);
 }
 
-.icon-email {
-    width: 16px;
-    height: 12px;
-    margin-right: 10px;
-    fill: #757575;
-}
-
-.icon-email:hover {
-    fill: #2196F3;
-}
-
-.icon-phone {
-    width: 10px;
-    height: 16px;
-    margin-right: 10px;
-}
-
 /* Main nav */
 
 .main-nav {
@@ -163,7 +148,7 @@ header {
 }
 
 .site-cont .item + .item {
-    margin-left: 50px;
+    margin-left: 30px;
 }
 
 .site-cont .link {
@@ -180,6 +165,23 @@ header {
 
 .site-nav .link.current {
     color: var(--nav-log-text-color);
+}
+
+.icon-email {
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+    fill: var(--paragraph-text-color);
+}
+
+.icon-email:hover {
+    fill: var(--nav-log-text-color);
+}
+
+.icon-phone {
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
 }
 
 /* Title */
@@ -281,30 +283,15 @@ header {
 
 /* Icons quality */
 
-.work-quality .item::before {
-    display: block;
-    content: '';
+.icon-qual {
     height: 120px;
+    width: 270px;
     background-color: var(--but--team-color);
-    background-size: 70px;
-    background-repeat: no-repeat;
-    background-position: center;
+    border-radius: 4px;
 }
 
-.item.icon-satel::before {
-    background-image: url(../images/antenna.svg);
-}
-
-.item.icon-clock::before {
-    background-image: url(../images/clock.svg);
-}
-
-.item.icon-lap::before {
-    background-image: url(../images/diagram.svg);
-}
-
-.item.icon-cos::before {
-    background-image: url(../images/astronaut.svg);
+.icon-qual {
+    padding: 25px 100px;
 }
 
 .head-quality {
@@ -444,6 +431,8 @@ header {
 
     font-size: 16px;
     line-height: 1.18;
+
+    margin-bottom: 16px;
 }
 
 .person {
@@ -460,6 +449,78 @@ header {
     padding-bottom: 30px;
 }
 
+.network {
+    text-decoration: none;
+    display: inline-block;
+}
+
+.network-icon {
+    width: 20px;
+    height: 20px; 
+}
+
+.inst {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    fill: var(--network-icon-color);
+}
+
+.inst:hover {
+    fill: var(--title-text-color);
+    background-color: var(--nav-log-text-color);
+    border-radius: 50%;
+}
+
+/* .net .network + .network {
+    margin-left: 10px;
+} */
+
+
+/* Clients */
+
+.title-client {
+    text-align: center;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+    margin-top: 94px;
+}
+
+.client {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-bottom: 94px;
+}
+
+.client-list {
+    width: 170px;
+    height: 92px;
+    padding: 16px 32px;
+}
+
+.client-a {
+    width: 170px;
+    height: 92px;
+    display: flex;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    justify-content: center;
+    align-items: center;
+    fill: #afb1b8;
+}
+
+.client-a:hover {
+    fill: #2196F3;
+    border: 1px solid #2196F3;
+}
 
 /* Footer */
 
@@ -510,10 +571,64 @@ header {
     letter-spacing: 0.03em;;
 }
 
+.connect {
+    text-transform: uppercase;
+    color: var(--title-text-color);
+    margin-bottom: 20px;
+
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+}
+
 .ft-cont {
     margin-bottom: 9px;
 }
 
 .ft-cont:nth-child(3n) {
     margin-bottom: 0;
+}
+
+.icon-foot {
+    margin-right: 10px;
+}
+
+.icon-foot:nth-child(4){
+    margin-right: 0;
+}
+
+.foot-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.link-foot {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--foot-icon-color);
+    fill: var(--title-text-color);
+}
+
+.link-foot:hover {
+    background-color: var(--nav-log-text-color);
+}
+
+.icon-list {
+    display: flex;
+}
+
+.foof {
+    display: flex;
+}
+
+.connect-end {
+    width: 206px;
+    height: 80px;
+    margin-left: 70px;
 }
