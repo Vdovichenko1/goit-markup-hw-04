@@ -160,6 +160,8 @@ header {
     text-decoration: none;
     padding-top: 32px;
     padding-bottom: 32px;
+    display: flex;
+    align-items: center;
 }
 
 .site-cont .link:hover,
@@ -167,27 +169,14 @@ header {
     color: var(--nav-log-text-color);
 }
 
-.icon-email {
-    width: 16px;
-    height: 12px;
-    margin-right: 10px;
-    fill: var(--paragraph-text-color);
-}
-
-.icon-email:hover {
+.site-cont .link:hover .icon,
+.site-cont .link:focus .icon {
     fill: var(--nav-log-text-color);
 }
 
-.icon-phone {
-    width: 10px;
-    height: 16px;
+.icon {
     margin-right: 10px;
     fill: var(--paragraph-text-color);
-    text-decoration: none;
-}
-
-.icon-phone:hover {
-    fill: var(--nav-log-text-color);
 }
 
 /* Title */
