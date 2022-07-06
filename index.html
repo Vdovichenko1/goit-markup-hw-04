@@ -22,12 +22,12 @@
             </nav>
             <ul class="site-cont">
                 <li class="item"> <svg class="icon-email">
-                    <use href="./images/symbol-defs.svg#icon-email"></use>
-                </svg> 
-                    <a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a> </li>
+                    <use href="./images/symbol-defs.svg#icon-email"></use></svg> 
+                    <a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a> 
+                </li>
                 <li class="item"> <svg class="icon-phone">
-                    <use href="./images/symbol-defs.svg#icon-phone"></use>
-                </svg> <a href="tel:+380961111111" class="link">+38 096 111 11 11</a> </li>
+                    <use href="./images/symbol-defs.svg#icon-phone"></use></svg> <a href="tel:+380961111111" class="link">+38 096 111 11 11</a> 
+                </li>
             </ul>
         </div>
     </header>
@@ -41,32 +41,40 @@
                 <h2 class="hidden" >Наши качества</h2>
                 <ul class="work-quality">
                     <li class="item">
-                        <svg class="icon-qual">
-                            <use href="./images/symbol-defs.svg#icon-antenna"></use>
-                        </svg>
+                        <div class="icon-img">
+                            <svg class="icon-qual">
+                                <use href="./images/symbol-defs.svg#icon-antenna"></use>
+                            </svg>
+                        </div>
                         <h3 class="head-quality">Внимание к деталям</h3>
                         <p class="quality">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
                     </li>
                     <li class="item">
-                        <svg class="icon-qual">
-                            <use href="./images/symbol-defs.svg#icon-clock"></use>
-                        </svg>
+                        <div class="icon-img">
+                            <svg class="icon-qual">
+                                <use href="./images/symbol-defs.svg#icon-clock"></use>
+                            </svg>
+                        </div>
                         <h3 class="head-quality">Пунктуальность</h3>
                         <p class="quality">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
                         </p>
                     </li>
                     <li class="item">
-                        <svg class="icon-qual">
-                            <use href="./images/symbol-defs.svg#icon-diagram"></use>
-                        </svg>
+                        <div class="icon-img">
+                            <svg class="icon-qual">
+                                <use href="./images/symbol-defs.svg#icon-diagram"></use>
+                            </svg>
+                        </div>
                         <h3 class="head-quality">Планирование</h3>
                         <p class="quality">Равным образом консультация с широким активом в значительной степени обуславливает.
                         </p>
                     </li>
                     <li class="item">
-                        <svg class="icon-qual">
-                            <use href="./images/symbol-defs.svg#icon-astronaut"></use>
-                        </svg>
+                        <div class="icon-img">
+                            <svg class="icon-qual">
+                                <use href="./images/symbol-defs.svg#icon-astronaut"></use>
+                            </svg>
+                        </div>
                         <h3 class="head-quality">Современные технологии</h3>
                         <p class="quality">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
                     </li>
@@ -218,46 +226,46 @@
                 </ul>
             </div>
         </section>
-        <section>
+        <section class="section">
             <div class="container">
                 <h2 class="title-client">Постоянные клиенты</h2>
                 <ul class="client">
-                    <li>
+                    <li class="client-mar">
                         <a class="client-a" href="">
                             <svg class="client-list">
                                 <use href="./images/symbol-defs.svg#icon-group"></use>
                             </svg>
                         </a>
                     </li>
-                    <li>
+                    <li class="client-mar">
                         <a class="client-a" href="">
                             <svg class="client-list">
                                 <use href="./images/symbol-defs.svg#icon-group-1"></use>
                             </svg>
                         </a>
                     </li>
-                    <li>
+                    <li class="client-mar">
                         <a class="client-a" href="">
                             <svg class="client-list">
                                 <use href="./images/symbol-defs.svg#icon-group-2"></use>
                             </svg>
                         </a>
                     </li>
-                    <li>
+                    <li class="client-mar">
                         <a class="client-a" href="">
                             <svg class="client-list">
                                 <use href="./images/symbol-defs.svg#icon-group-3"></use>
                             </svg>
                         </a>
                     </li>
-                    <li>
+                    <li class="client-mar">
                         <a class="client-a" href="">
                             <svg class="client-list">
                                 <use href="./images/symbol-defs.svg#icon-group-4"></use>
                             </svg>
                         </a>
                     </li>
-                    <li>
+                    <li class="client-mar">
                         <a class="client-a" href="">
                             <svg class="client-list">
                                 <use href="./images/symbol-defs.svg#icon-group-5"></use>
@@ -268,10 +276,10 @@
             </div>
         </section>
     </main>
-    <footer class="foot">
-        <div class="container">
-            <a href="./index.html" class="foot-web"><span>Web</span>Studio</a>
-            <div class="foof">
+    <footer class="ftr">
+        <div class="container main-foot">
+            <section class="foot">
+                <a href="./index.html" class="foot-web"><span>Web</span>Studio</a>
                 <address class="foot-adress">
                     <ul class="site-ft">
                         <li class="ft-cont"> <a href="https://goo.gl/maps/F9UGEikjTN2jMp9C9" target="_blank" class="adress link">г.
@@ -281,40 +289,40 @@
                         <li class="ft-cont"> <a href="tel:+380961111111" class="footer-contact link">+38 096 111 11 11</a> </li>
                     </ul>
                 </address>
-                <section class="connect-end">
-                    <h2 class="connect">Присоединяйтесь</h2>
-                    <ul class="icon-list">
-                        <li class="icon-foot">
-                            <a class="link-foot" href="">
-                                <svg class="foot-icon">
-                                    <use href="./images/symbol-defs.svg#icon-instagram"></use>
+            </section>
+            <section class="connect-end">
+                <h2 class="connect">Присоединяйтесь</h2>
+                <ul class="icon-list">
+                    <li class="icon-foot">
+                        <a class="link-foot" href="">
+                            <svg class="foot-icon">
+                                <use href="./images/symbol-defs.svg#icon-instagram"></use>
                                 </svg>
-                            </a>
+                        </a>
                         </li>
-                        <li class="icon-foot">
-                            <a class="link-foot" href="">
-                                <svg class="foot-icon">
-                                    <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                    <li class="icon-foot">
+                        <a class="link-foot" href="">
+                            <svg class="foot-icon">
+                                <use href="./images/symbol-defs.svg#icon-twitter"></use>
                                 </svg>
-                            </a>
-                        </li>
-                        <li class="icon-foot">
-                            <a class="link-foot" href="">
-                                <svg class="foot-icon">
-                                    <use href="./images/symbol-defs.svg#icon-facebook"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="icon-foot">
-                            <a class="link-foot" href="">
-                                <svg class="foot-icon">
-                                    <use href="./images/symbol-defs.svg#icon-linkedin"></use>
-                                </svg>
-                            </a>
-                        </li>
-                    </ul>
-                </section>
-            </div>
+                        </a>
+                    </li>
+                    <li class="icon-foot">
+                        <a class="link-foot" href="">
+                            <svg class="foot-icon">
+                                <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="icon-foot">
+                        <a class="link-foot" href="">
+                            <svg class="foot-icon">
+                                <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </section>
         </div>
     </footer>
 </body>
